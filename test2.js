@@ -234,3 +234,22 @@ Blockly.Blocks['delete_file'] = {
  this.setHelpUrl("");
   }
 };
+
+
+
+Blockly.Blocks['delay_os'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Delay");
+    this.appendValueInput("delay")
+        .setCheck("Number")
+        .appendField("delay");
+    this.setInputsInline(false);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+ this.setTooltip("Delay Processing in Seconds ");
+ this.setHelpUrl("");
+  }
+};
+
